@@ -92,7 +92,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MallActivity"/>
+        <activity android:name=".MallActivity" />
+        <activity android:name=".WebViewActivity"></activity>
     </application>
 
 </manifest>

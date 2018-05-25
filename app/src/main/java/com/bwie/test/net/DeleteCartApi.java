@@ -1,7 +1,6 @@
 package com.bwie.test.net;
 
-
-import com.example.ruiyonghui.apkjingdongmd5.bean.BaseBean;
+import com.bwie.test.bean.BaseBean;
 
 import io.reactivex.Observable;
 
@@ -20,8 +19,7 @@ public class DeleteCartApi {
         return deleteCartApi;
     }
 
-    public Observable<BaseBean> deleteCart(String uid, String pid,
-                                           String token) {
+    public Observable<BaseBean> deleteCart(String uid, String pid, String token) {
         return deleteCartApiService.deleteCart(uid, pid, token);
     }
 }

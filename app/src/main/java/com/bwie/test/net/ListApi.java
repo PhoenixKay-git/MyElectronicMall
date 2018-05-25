@@ -14,8 +14,7 @@ public class ListApi {
     }
 
     public static ListApi getListApi(ListService listService){
-        if (listApi==null)
-        {
+        if (listApi==null) {
             listApi=new ListApi(listService);
         }
         return listApi;

@@ -11,13 +11,13 @@ import dagger.Component;
 @Component(modules = HttpModule.class)
 public interface HttpComponent {
     //void inject(DetailActivity homePageFragment);
-    void inject(HomePageFragment classifyFragment);
-    void inject(ClassifyFragment detailActivity);
+    void inject(HomePageFragment homePageFragment);
+    void inject(ClassifyFragment classifyFragment);
     void inject(ShopFragment shopFragment);
     void inject(FindFragment findFragment);
    // void inject(ListsActivity listsActivity);
-   // void inject(LoginActivity2 loginActivity2);
-   // void inject(RegistActivity2 registActivity2);
+   // void inject(LoginActivity loginActivity);
+   // void inject(RegistActivity registActivity);
     //void inject(ShopCartActivity shopCartActivity);
     //void inject(MakeSureOrderActivity makeSureOrderActivity);
    // void inject(UserInfoActivity userInfoActivity);

@@ -94,7 +94,14 @@
         </activity>
         <activity android:name=".MallActivity" />
         <activity android:name=".WebViewActivity" />
-        <activity android:name=".home.DetailActivity"></activity>
+        <activity android:name=".home.DetailActivity" />
+        <activity android:name=".classify.ListsActivity" />
+        <activity android:name=".ImageScaleActivity" />
+        <activity android:name="com.bwie.test.shop.ShopCartActivity" />
+        <activity android:name=".login.LoginActivity2" />
+        <activity android:name=".login.Regist2Activity" />
+        <activity android:name=".loginandregist.LoginActivity" />
+        <activity android:name=".loginandregist.RegistActivity"></activity>
     </application>
 
 </manifest>

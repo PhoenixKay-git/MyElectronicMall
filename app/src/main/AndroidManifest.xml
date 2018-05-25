@@ -93,7 +93,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MallActivity" />
-        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".home.DetailActivity"></activity>
     </application>
 
 </manifest>

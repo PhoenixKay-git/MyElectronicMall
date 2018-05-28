@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.bwie.test.bean.AdBean;
 import com.bwie.test.bean.ProductsBean;
+import com.bwie.test.component.DaggerHttpComponent;
+import com.bwie.test.module.HttpModule;
 import com.bwie.test.myelectronicmall.ImageScaleActivity;
 import com.bwie.test.myelectronicmall.R;
 import com.bwie.test.myelectronicmall.base.BaseActivity;
@@ -89,7 +91,10 @@ public class DetailActivity extends BaseActivity<AddCartPresenter> implements Ad
 
     @Override
     public void inject() {
-
+        DaggerHttpComponent.builder()
+                .httpModule(new HttpModule())
+                .build()
+                .inject(this);
     }
 
     private void setData() {

@@ -101,7 +101,9 @@
         <activity android:name=".login.LoginActivity2" />
         <activity android:name=".login.Regist2Activity" />
         <activity android:name=".loginandregist.LoginActivity" />
-        <activity android:name=".loginandregist.RegistActivity"></activity>
+        <activity android:name=".loginandregist.RegistActivity" />
+        <activity android:name="com.bwie.test.mine.MakeSureOrderActivity" />
+        <activity android:name="com.bwie.test.mine.AddNewAddrActivity"></activity>
     </application>
 
 </manifest>

@@ -6,6 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.widget.ImageView;
 
 import com.bwie.test.bean.ProductsBean;
+import com.bwie.test.component.DaggerHttpComponent;
+import com.bwie.test.module.HttpModule;
 import com.bwie.test.myelectronicmall.R;
 import com.bwie.test.myelectronicmall.base.BaseActivity;
 import com.bwie.test.myelectronicmall.classify.adapter.XrvListAdapter;
@@ -72,7 +74,10 @@ public class ListsActivity extends BaseActivity<ListPresenter> implements ListCo
 
     @Override
     public void inject() {
-
+        DaggerHttpComponent.builder()
+                .httpModule(new HttpModule())
+                .build()
+                .inject(this);
     }
 
     @Override

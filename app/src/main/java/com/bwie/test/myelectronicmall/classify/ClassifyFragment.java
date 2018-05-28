@@ -16,7 +16,9 @@ import android.widget.ImageView;
 
 import com.bwie.test.bean.CatagoryBean;
 import com.bwie.test.bean.ProductCatagoryBean;
+import com.bwie.test.component.DaggerHttpComponent;
 import com.bwie.test.inter.OnItemClickListener;
+import com.bwie.test.module.HttpModule;
 import com.bwie.test.myelectronicmall.R;
 import com.bwie.test.myelectronicmall.WebViewActivity;
 import com.bwie.test.myelectronicmall.base.BaseFragment;
@@ -44,7 +46,10 @@ public class ClassifyFragment extends BaseFragment<ClassifyPresenter> implements
 
     @Override
     public void inject() {
-
+        DaggerHttpComponent.builder()
+                .httpModule(new HttpModule())
+                .build()
+                .inject(this);
     }
 
     @Override

@@ -45,7 +45,7 @@ public class RvLeftAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         //设置字体颜色
         if (dataBean.getChecked()) {
             leftViewHolder.tv.setTextColor(Color.RED);
-            leftViewHolder.tv.setBackgroundColor(Color.GRAY);
+            leftViewHolder.tv.setBackgroundColor(Color.LTGRAY);
         } else {
             leftViewHolder.tv.setTextColor(Color.BLACK);
             leftViewHolder.tv.setBackgroundColor(Color.WHITE);

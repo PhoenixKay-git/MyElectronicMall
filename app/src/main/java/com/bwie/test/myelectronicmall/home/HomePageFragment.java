@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.bwie.test.bean.AdBean;
@@ -44,6 +45,7 @@ public class HomePageFragment extends BaseFragment<HomePagePresenter> implements
     private MarqueeView marqueeView;
     private RecyclerView rvSecKill;
     private RecyclerView rvRecommend;
+    private LinearLayout sousuo_view;
     private ImageView ivZxing;
     private ImageView message;
     private int num=1;
@@ -96,6 +98,7 @@ public class HomePageFragment extends BaseFragment<HomePagePresenter> implements
         message=view.findViewById(R.id.message);
         ivZxing.setOnClickListener(this);
         message.setOnClickListener(this);
+        sousuo_view.setOnClickListener(this);
         //请求数据
         initData();
     }
@@ -163,20 +166,14 @@ public class HomePageFragment extends BaseFragment<HomePagePresenter> implements
                 startActivity(intent);
             }
         } );
-//        rvRecommendAdapter.setOnItemClickListener(new OnItemClickListener() {
-//            @Override
-//            public void onItemClick(int position) {
-//                Intent intent=new Intent(getActivity(),DetailActivity.class);
-//                intent.putExtra( "1","1" );
-//                intent.putExtra("pid",list.get(position).getPid());
-//                startActivity(intent);
-//            }
-//
-//            @Override
-//            public void onLongItemClick(int position) {
-//
-//            }
-//        });
+        //跳转搜索页面
+        sousuo_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), SouSuoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

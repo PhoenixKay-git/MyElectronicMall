@@ -9,7 +9,7 @@
         android:id="@+id/detai_relative"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@android:color/darker_gray">
+        android:background="#dadada">
 
         <ImageView
             android:id="@+id/detail_image_back"

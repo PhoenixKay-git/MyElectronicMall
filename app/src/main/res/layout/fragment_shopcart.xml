@@ -14,7 +14,8 @@
         android:groupIndicator="@null"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"></ExpandableListView>
+        android:layout_weight="1">
+    </ExpandableListView>
 
     <RelativeLayout
         android:layout_width="match_parent"

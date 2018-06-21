@@ -98,13 +98,12 @@
         <activity android:name=".classify.ListsActivity" />
         <activity android:name=".ImageScaleActivity" />
         <activity android:name="com.bwie.test.shop.ShopCartActivity" />
-        <activity android:name=".login.LoginActivity2" />
-        <activity android:name=".login.Regist2Activity" />
         <activity android:name=".loginandregist.LoginActivity" />
         <activity android:name=".loginandregist.RegistActivity" />
         <activity android:name="com.bwie.test.mine.MakeSureOrderActivity" />
         <activity android:name="com.bwie.test.mine.AddNewAddrActivity" />
-        <activity android:name=".home.SouSuoActivity"></activity>
+        <activity android:name=".home.SouSuoActivity" />
+        <activity android:name=".mine.UserInfoActivity"></activity>
     </application>
 
 </manifest>

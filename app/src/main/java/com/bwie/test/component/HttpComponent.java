@@ -7,6 +7,9 @@ import com.bwie.test.myelectronicmall.classify.ListsActivity;
 import com.bwie.test.myelectronicmall.find.FindFragment;
 import com.bwie.test.myelectronicmall.home.DetailActivity;
 import com.bwie.test.myelectronicmall.home.HomePageFragment;
+import com.bwie.test.myelectronicmall.loginandregist.LoginActivity;
+import com.bwie.test.myelectronicmall.loginandregist.RegistActivity;
+import com.bwie.test.myelectronicmall.mine.UserInfoActivity;
 import com.bwie.test.myelectronicmall.shopcart.ShopFragment;
 import com.bwie.test.shop.ShopCartActivity;
 
@@ -20,9 +23,9 @@ public interface HttpComponent {
     void inject(ShopFragment shopFragment);
     void inject(FindFragment findFragment);
     void inject(ListsActivity listsActivity);
-   // void inject(LoginActivity loginActivity);
-   // void inject(RegistActivity registActivity);
+    void inject(LoginActivity loginActivity);
+    void inject(RegistActivity registActivity);
     void inject(ShopCartActivity shopCartActivity);
     void inject(MakeSureOrderActivity makeSureOrderActivity);
-   // void inject(UserInfoActivity userInfoActivity);
+    void inject(UserInfoActivity userInfoActivity);
 }

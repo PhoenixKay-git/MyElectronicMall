@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bwie.test.bean.UserBean;
+import com.bwie.test.component.DaggerHttpComponent;
+import com.bwie.test.module.HttpModule;
 import com.bwie.test.myelectronicmall.MainActivity;
 import com.bwie.test.myelectronicmall.R;
 import com.bwie.test.myelectronicmall.base.BaseActivity;
@@ -56,7 +58,10 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements View.
 
     @Override
     public void inject() {
-
+        DaggerHttpComponent.builder()
+                .httpModule(new HttpModule())
+                .build()
+                .inject(this);
     }
 
     @Override

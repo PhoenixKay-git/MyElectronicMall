@@ -11,6 +11,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.bwie.test.bean.RegisterBean;
+import com.bwie.test.component.DaggerHttpComponent;
+import com.bwie.test.module.HttpModule;
 import com.bwie.test.myelectronicmall.R;
 import com.bwie.test.myelectronicmall.base.BaseActivity;
 import com.bwie.test.myelectronicmall.loginandregist.contract.RegisterContract;
@@ -36,7 +38,10 @@ public class RegistActivity extends BaseActivity<RegisterPresenter> implements R
 
     @Override
     public void inject() {
-
+        DaggerHttpComponent.builder()
+                .httpModule(new HttpModule())
+                .build()
+                .inject(this);
     }
 
     private void initView() {
